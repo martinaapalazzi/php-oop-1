@@ -2,7 +2,7 @@
 class Movie {
     public $title;
     public $releaseDate;
-    private $genre;
+    private $genre = array();
 
     function __construct($titolo, $dataRilascio, $genere) {
         $this->title = $titolo;
