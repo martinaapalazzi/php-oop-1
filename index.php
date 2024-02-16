@@ -24,4 +24,11 @@ var_dump($ratauille);
 //$ratauille->title = 'Ratatuille';
 //$ratauille->releaseDate = 'June 29, 2007';
 
-echo 'Title: '.$ratauille->title = 'Ratatuille'.' - Release date: '.$ratauille->releaseDate = 'June 29, 2007'.' - Genre: '.$ratauille->genre = 'Fanatsy';
+echo 'Title: '.$ratauille->title = 'Ratatuille'.' - Release date: '.$ratauille->releaseDate = 'June 29, 2007'.' - Genre: '.$ratauille->genre = 'Fantasy';
+
+
+$tombRaider = new Movie('Tomb Raider', 'March 5, 2013', 'Action');
+
+var_dump($tombRaider);
+
+echo 'Title: '.$tombRaider->title = 'Tomb Raider'.' - Release date: '.$tombRaider->releaseDate = 'March 5, 2013'.' - Genre: '.$tombRaider->genre = 'Action';
