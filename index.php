@@ -52,7 +52,7 @@ $ratauille = new Movie('Ratauille', 'June 29, 2007', 'Disney', '1h30', true, $fa
 
 var_dump($ratauille);
 
-// echo 'Title: '.$ratauille->title = 'Ratatuille'.' - Release date: '.$ratauille->releaseDate = 'June 29, 2007'.' - Director: '.$ratauille->director = 'Disney'.' Duration: '.$ratatuille->duration = '1h.30'.' - Available in streaming: '.$ratauille->availableInStreaming = true.' - Genre: '.$ratauille->setGenre('Fantasy')->name;
+echo 'Title: '.$ratauille->title = 'Ratatuille'.' - Release date: '.$ratauille->releaseDate = 'June 29, 2007'.' - Director: '.$ratauille->director = 'Disney'.' Duration: '.$ratatuille->duration = '1h.30'.' - Available in streaming: '.$ratauille->availableInStreaming = true; //.' - Genre: '.$ratauille->setGenre('Fantasy')->name;
 
 
 
