@@ -6,7 +6,6 @@ class Genre {
     public function __construct ($nome) {
         $this->name = $nome;
     }
-
 }
 class Movie {
     public $title;
@@ -21,7 +20,7 @@ class Movie {
         $dataRilascio,
         $regista,
         $durata,
-        bool $visibileInStreaming = false,
+        bool $visibileInStreaming,
         Genre $genere )
     {
         $this->title = $titolo;
@@ -52,14 +51,11 @@ $ratauille = new Movie('Ratauille', 'June 29, 2007', 'Disney', '1h30', true, $fa
 
 var_dump($ratauille);
 
-echo 'Title: '.$ratauille->title = 'Ratatuille'.' - Release date: '.$ratauille->releaseDate = 'June 29, 2007'.' - Director: '.$ratauille->director = 'Disney'.' Duration: '.$ratatuille->duration = '1h.30'.' - Available in streaming: '.$ratauille->availableInStreaming = true; //.' - Genre: '.$ratauille->setGenre('Fantasy')->name;
-
-
-
+echo 'Title: '.$ratauille->title.' - Release date: '.$ratauille->releaseDate.' - Director: '.$ratauille->director.' Duration: '.$ratauille->duration.' - Available in streaming: '.$ratauille->availableInStreaming.' - Genre: '.$ratauille->getGenre()->name;
 
 
 $tombRaider = new Movie('Tomb Raider', 'March 5, 2013', 'Wes Ball', '2h30', false, new Genre('Action'));
 
 var_dump($tombRaider);
 
-// echo 'Title: '.$tombRaider->title = 'Tomb Raider'.' - Release date: '.$tombRaider->releaseDate = 'March 5, 2013'.' - Director: '.$tombRaider->director = 'Wes Ball'.' - Duration: '.$tombRaider->duration = '2h.30'.' - Available in streaming: '.$tombRaider->availableInStreaming = false.' - Genre: '.$tombRaider->setGenre('Action')->name;
+echo 'Title: '.$tombRaider->title.' - Release date: '.$tombRaider->releaseDate.' - Director: '.$tombRaider->director.' - Duration: '.$tombRaider->duration.' - Available in streaming: '.$tombRaider->availableInStreaming.' - Genre: '.$tombRaider->getGenre()->name;
